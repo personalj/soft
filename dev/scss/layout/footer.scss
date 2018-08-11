@@ -1,0 +1,40 @@
+.footer {
+	padding: 135px 0;
+	background: #282828;
+	& .copywrite {
+		margin: 20px 0 25px;
+		color: #ffffff;
+		font-family: 'Exo-Regular';
+		font-size: 1rem;
+		& span {
+			font-family: 'Exo-DemiBold';
+		}
+	}
+	& .social li {
+		display: inline-block;
+		margin-left: 46px;
+		&:first-child {
+			margin-left: 0;
+		}
+		@media all and (max-width:480px) {
+			margin: 15px 0;
+			display: block;
+		}
+	}
+	& .social a, & .social .icon {
+		display: inline-block;
+		transition: .3s;
+	}
+	& .social a {
+		height: 25px;
+		&:before {
+			content: '';
+			vertical-align: middle;
+			display: inline-block;
+			height: 100%;
+		}
+	}
+	& .social .icon {
+		vertical-align: middle;
+	}
+}
